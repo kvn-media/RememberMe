@@ -1,4 +1,4 @@
-﻿namespace WebApi.Controller;
+﻿namespace WebApi.Controllers;
 
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;

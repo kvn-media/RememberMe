@@ -1,4 +1,4 @@
-﻿namespace WebApi.Helpers;
+namespace WebApi.Helpers;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 public class ErrorHandlerMiddleware
 {
-	private readonly RequestDelegate _next;
-	private readonly ILogger _logger;
+    private readonly RequestDelegate _next;
+    private readonly ILogger _logger;
 
-	public ErrorHandlerMiddleware(RequestDelegate next, ILogger logger)
+    public ErrorHandlerMiddleware(RequestDelegate next, ILogger<ErrorHandlerMiddleware> logger)
     {
         _next = next;
         _logger = logger;
@@ -30,7 +30,7 @@ public class ErrorHandlerMiddleware
             var response = context.Response;
             response.ContentType = "application/json";
 
-            switch (error) 
+            switch (error)
             {
                 case AppException e:
                     // custom application error
@@ -38,12 +38,12 @@ public class ErrorHandlerMiddleware
                     break;
                 case KeyNotFoundException e:
                     // not found error
-                    response.StatusCode = (int)HttpStatusCode.NotFound; 
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
                     break;
-                default: 
+                default:
                     // unhandled error
                     _logger.LogError(error, error.Message);
-                    response.StatusCode = (int)(HttpStatusCode.InternalServerError);
+                    response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;
             }
 

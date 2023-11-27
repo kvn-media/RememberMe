@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 {
     var services = builder.Services;
     var env = builder.Environment;
-
+ 
     services.AddDbContext<DataContext>();
     services.AddCors();
     services.AddControllers().AddJsonOptions(x =>

@@ -1,4 +1,4 @@
-﻿namespace WebApi.Helpers;
+namespace WebApi.Helpers;
 
 using AutoMapper;
 using WebApi.Entities;
