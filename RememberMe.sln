@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RememberMe", "RememberMe.csproj", "{25814AAF-FAEA-47A6-99DC-EF01E8D82C75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{F2EC6093-28F7-45ED-BD9B-F2F5FD9490BC}"
+	ProjectSection(SolutionItems) = preProject
+		UsersController.cs = UsersController.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{D29F8D0F-6F35-497E-9920-3DE1DDFECDD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{01754C40-6AA9-489D-81C1-C9E44B69CCD1}"
+	ProjectSection(SolutionItems) = preProject
+		AppException.cs = AppException.cs
+		AutoMapperProfile.cs = AutoMapperProfile.cs
+		DataContext.cs = DataContext.cs
+		ErrorHandleMiddleware.cs = ErrorHandleMiddleware.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A6723CDA-3293-4190-AE6C-4644FE8AD306}"
+	ProjectSection(SolutionItems) = preProject
+		UserService.cs = UserService.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{749FF3BD-2416-4580-82AA-B2C2B7DD89E2}"
+	ProjectSection(SolutionItems) = preProject
+		Role.cs = Role.cs
+		User.cs = User.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{0A832288-6E3C-41FB-8778-0DF4C1B22D5E}"
+	ProjectSection(SolutionItems) = preProject
+		CreateRequest.cs = CreateRequest.cs
+		UpdateRequest.cs = UpdateRequest.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51E3308C-4AE1-47D7-93EA-3A62DE22D422}"
+	ProjectSection(SolutionItems) = preProject
+		WebApi.csproj = WebApi.csproj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25814AAF-FAEA-47A6-99DC-EF01E8D82C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25814AAF-FAEA-47A6-99DC-EF01E8D82C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25814AAF-FAEA-47A6-99DC-EF01E8D82C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25814AAF-FAEA-47A6-99DC-EF01E8D82C75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A832288-6E3C-41FB-8778-0DF4C1B22D5E} = {D29F8D0F-6F35-497E-9920-3DE1DDFECDD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2E16130-A855-4D20-A186-15AF9495943D}
+	EndGlobalSection
+EndGlobal
